@@ -9,7 +9,7 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="https://static.codehs.com/gulp/cb01b4a22ffd3971572a8a1ab9f3b7c4cb17f383/chs-js-lib/chs.js"></script>
         <script>
-                      window.onload = function() {
+window.onload = function() {
 var NUM_ROWS = 8; 
 var BRICK_TOP_OFFSET = 10; 
 var BRICK_SPACING = 2; 
@@ -181,12 +181,42 @@ brickColor();
                     };
       </script>
         <style>
+                        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111;
+            }
             canvas {
                     border: 1px solid black;
             }
         </style>
     </head>
     <body>
+        <ul>
+            <li><a href="index.html"> Bio page</a></li>
+            <li><a href="htmltest.html"> htmltest</a></li>
+            <li><a href="Game.html"> game</a></li>
+            <li><a href="popup.html.html"> Cool popup page</a></li>
+            <li><a href="Homepage.html"> Back to homepage</a></li>
+        </ul>
         <div id="canvasContainer" width="100%" style="width: 100%; height: 100%; overflow: hidden;">
             <canvas width="400" height="500" class="codehs-editor-canvas"></canvas>
             <a href="Homepage.html"> Back to homepage</a>
