@@ -12,11 +12,22 @@ and open the template in the editor.
                 border: solid 1px;
                 width: 100px;
                 height: 100px;
-                background-color: black;
+                background-color: lightcyan;
+                text-align: center;
+                font-size: 80px;
             }
+            
         </style>
+        <script>
+        var player = "X";
+        function play(id){
+            var move= document.getElementById(id);
+            move.textContent=player;
+        }
+        </script>
     </head>
     <body>
+        
         <ul>
                 <li><a href="bio.html"> Bio page</a></li>
                 <li><a href="htmltest.html"> htmltest</a></li>
@@ -27,19 +38,19 @@ and open the template in the editor.
         </ul>
         <table> 
             <tr>    
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="1" onclick="play('1');"></td>
+                <td id="2" onclick="play('2');"></td>
+                <td id="3" onclick="play('3');"></td>
             </tr>
             <tr>    
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="4" onclick="play('4');"></td>
+                <td id="5" onclick="play('5');"></td>
+                <td id="6" onclick="play('6');"></td>
             </tr>
             <tr>    
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="7" onclick="play('7');"></td>
+                <td id="8" onclick="play('8');"></td>
+                <td id="9" onclick="play('9');"></td>
             </tr>
         </table>
     </body>
