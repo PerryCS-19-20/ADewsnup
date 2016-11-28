@@ -19,10 +19,28 @@ and open the template in the editor.
             
         </style>
         <script>
-        var player = "X";
+        var playerx = "X";
+        var playero = "O";
+
         function play(id){
             var move= document.getElementById(id);
-            move.textContent=player;
+            move.textContent=playerx;
+        }
+        function check3cells ( c1id, c2id, c3id){
+            var c1 = document.getElementById(c1id);
+            var c2 = document.getElementById(c2id);
+            var c3 = document.getElementById(c3id);
+          if ((cl.textContent == c2.textContent)&&
+              (c2.textContent == c3.textContent)&&
+              (c3.textContent! == ""))}
+                    win = true;
+          check3cells("1","2","3");
+          check3cells("1","4","7");
+          check3cells("1","5","9");
+          check3cells("3","6","9");
+          check3cells("3","5","7");
+          check3cells("7","8","9");
+          check3cells("2","5","8");
         }
         </script>
     </head>
