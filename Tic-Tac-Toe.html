@@ -1,7 +1,3 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +15,14 @@ and open the template in the editor.
             
         </style>
         <script>
-        var playerx = "X";
-        var playero = "O";
-
+        var x = "X";
+        var o = "O";
+        function player (x, o){
+            
+        }    
         function play(id){
             var move= document.getElementById(id);
-            move.textContent=playerx;
+            move.textContent=player;
         }
         function check3cells ( c1id, c2id, c3id){
             var c1 = document.getElementById(c1id);
