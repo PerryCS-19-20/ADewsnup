@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sphere Calc</title>
+        <script>
+            function calc() {
+                var r = parseFloat(document.getElementById("rad").value);
+                var vol = document.getElementById("vol");
+                var area = (4/3) * Math.PI * r * r * r;  
+                vol.value = (area * 1).toFixed(2);        // Show volume of Sphere
+            }
+        </script>
+        
+        <style>
+            input[type=number] {
+                width: 64px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="newcss.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="bio.html"> Bio page</a></li>
+            <li><a href="htmltest.html"> htmltest</a></li>
+            <li><a href="Game.html"> game</a></li>
+            <li><a href="popup.html.html"> Cool popup page</a></li>
+            <li><a href="Tic-Tac-Toe.html"> Tic-Tac-Toe</a></li>
+            <li><a href="Multiplication.html"> Multiplication</a></li>
+            <li><a href="index.html"> Back to homepage</a></li>    
+        </ul>
+        <h1>Sphere volume:</h1>
+        <img src="data:image/png;base64,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" style="float: left; height: 150px; margin-right: 5px;">
+        <h2>v = 4/3 &pi; r <sup>3</sup></h2>
+        
+        r: <input type="number" id="rad" placeholder="radius">
+        <button onclick="calc();">Calculate</button>
+        <hr>
+        v: <input type="output" id="vol" placeholder="volume" readonly>
+    </body>
+</html>

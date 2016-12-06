@@ -14,7 +14,7 @@
         </style>
         <link rel="stylesheet" type="text/css" href="newcss.css">
     </head>
-    <body onload="buildTimesTable()">
+    <body onload="buildTimesTable();">
         <ul>
             <li><a href="bio.html"> Bio page</a></li>
             <li><a href="htmltest.html"> htmltest</a></li>
@@ -31,7 +31,7 @@
             function buildTimesTable() {
                 // Remove the multiplication table if it already exists.
                 var timesTable = document.getElementById("timesTable");
-                if (timesTable != null) {
+                if (timesTable !== null) {
                     timesTable.parentNode.removeChild(timesTable);        
                 }
                    
@@ -41,10 +41,10 @@
                 var body = document.body;
                 body.appendChild(timesTable);
                 for (i = 0; i < 11; i++) { 
-                    var row= document.getElement("tr")
+                    var row= document.getElement("tr");
                     timesTable.appendChild(row);
                     for (x = 0; x < 11; x++) { 
-                    var cell=document.createElement("td")
+                    var cell=document.createElement("td");
                     timesTable.appendChild(cell);
                     }
                 }
