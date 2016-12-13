@@ -4,5 +4,5 @@
  */
 
 
-    buildMap();
-        <a id="bio" a href="bio.html"> Bio Page </a> 
+    function buildMap(x)
+        

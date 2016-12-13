@@ -30,8 +30,10 @@
             var c3 = document.getElementById(c3id);
           if ((cl.textContent == c2.textContent)&&
               (c2.textContent == c3.textContent)&&
-              (c3.textContent! == ""))}
+              (c3.textContent !== "checkWin"))
                     win = true;
+        }
+        function checkWin () {
           check3cells("1","2","3");
           check3cells("1","4","7");
           check3cells("1","5","9");
@@ -45,13 +47,20 @@
     <body>
         
         <ul>
-                <li><a href="bio.html"> Bio page</a></li>
-                <li><a href="htmltest.html"> htmltest</a></li>
-                <li><a href="Game.html"> game</a></li>
-                <li><a href="popup.html.html"> Cool popup page</a></li>
-                <li><a href="Tic-Tac-Toe.html"> Tic-Tac-Toe</a></li>
-                <li><a href="Multiplication.html"> Multiplication</a></li>
-                <li><a href="Index.html"> Back to homepage</a></li>
+            <li><a href="bio.html"> Bio page</a></li>
+            <li><a href="index.html"> Back to homepage</a></li>
+            <li class="dropdown">
+    <a href="#" class="dropbtn">Class Projects</a>
+    <div class="dropdown-content">
+      <a href="Game.html">Breakout</a>
+      <a href="htmltest.html">Input Page</a>
+      <a href="popup.html.html">Popup page</a>
+      <a href="Tic-Tac-Toe.html">Tic-Tac-Toe</a>
+      <a href="Multiplication.html">Multiplication</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+  </li>
         </ul>
         <table> 
             <tr>    
